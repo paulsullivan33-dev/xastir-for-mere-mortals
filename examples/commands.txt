@@ -1,0 +1,45 @@
+Xastir for Mere Mortals — the commands, in order
+================================================
+
+Install (Ubuntu 24.04, chapter 2)
+    sudo apt update
+    sudo apt install xastir
+
+Version check (no display needed)
+    xastir -V
+    -> Xastir V2.2.0
+
+First run (from a terminal, so warnings have somewhere to go)
+    xastir &
+    -> creates ~/.xastir/ with config, data, gps, logs,
+       map_cache, tmp, tracklogs
+
+Read the default configuration (chapters 3, 5, 9)
+    grep STATION_CALLSIGN ~/.xastir/config/xastir.cnf
+    grep -E "TNC_LOG_DATA|NET_LOG_DATA|LOG_IGATE|LOG_WX|LOG_MESSAGE" \
+        ~/.xastir/config/xastir.cnf
+    grep DEVICE0_ ~/.xastir/config/xastir.cnf
+
+The default map selection (chapter 4)
+    cat ~/.xastir/config/selected_maps.sys
+
+APRS-IS passcode calculator (chapter 5; shown for the
+placeholder callsign only — use your own callsign, keep
+your own code to yourself)
+    callpass N0CALL
+    -> Passcode for N0CALL is 13023
+
+Playback preparation (chapter 8)
+    cp examples/specimen-log.txt ~/.xastir/logs/
+    then in Xastir: File -> Open Log File -> specimen-log.txt
+    -> status bar reads "File done..", counter 1/1 -> 6/6
+
+Command-line options (from the program itself, xastir -?)
+    -c /path/dir       Xastir config dir
+    -f callsign        Track callsign
+    -geometry WxH+X+Y  Set Window Geometry
+    -l English         Set the language
+    -m                 Deselect Maps
+    -p                 Disable popups
+    -v level           Set the debug level
+    -V                 Print version number and exit

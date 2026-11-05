@@ -1,0 +1,9 @@
+N0CALL-1>APRS,WIDE2-2:!4000.20N/07500.60W#PHG5130/A=000120 Fictional digipeater - specimen log only
+N0CALL>APRS:!4001.10N/07502.30W- Fictional home station - specimen log only
+N0CALL-9>APRS,WIDE1-1,WIDE2-1:!3959.80N/07459.50W>090/012/A=000450 Fictional mobile station
+N0CALL-9>APRS,WIDE2-1:@051745z4000.10N/07500.10W>095/018/A=000520 Moving east on a fictional road
+N0CALL-2>APRS:!4000.40N/07500.90W_090/008g014t068r000p000P000h55b10132 Fictional weather station
+N0CALL>APRS:;PICNIC   *051745z4000.60N/07501.20WOFictional picnic object - bring your own sandwich
+N0CALL-9>APRS::N0CALL   :Fictional message from the specimen log{01
+N0CALL>APRS::N0CALL-9 :ack01
+N0CALL-9>APRS:>Fictional status text - testing the specimen log

@@ -1,0 +1,24 @@
+site_name: Xastir for Mere Mortals
+site_description: Plain-language APRS mapping with Xastir, the long-lived Linux APRS client. Stations, objects and weather drawn on a map as they are heard, the interfaces that feed it from TNC to APRS-IS, messages and bulletins, and log files played back packet by packet.
+site_url: https://paulsullivan33-dev.github.io/xastir-for-mere-mortals/
+
+# Guides live at the repo root (nice for GitHub browsing).
+# The deploy workflow copies them into docs/ before building.
+theme:
+  name: material
+
+nav:
+  - Home: index.md
+  - What APRS and Xastir Are: what-aprs-and-xastir-are.md
+  - Installing Xastir: installing-xastir.md
+  - First Run and Station Setup: first-run-and-station-setup.md
+  - Maps: maps.md
+  - Interfaces: interfaces.md
+  - Reading the Map: reading-the-map.md
+  - Messaging and Bulletins: messaging-and-bulletins.md
+  - Logging and Playback: logging-and-playback.md
+  - The Igate and Digipeater Question: igate-and-digipeater.md
+  - The Neighbours: the-neighbours.md
+  - Troubleshooting: troubleshooting.md
+  - Glossary: glossary.md
+  - Writing Criteria: criteria.md

@@ -1,0 +1,34 @@
+Making user dir
+Making user config dir
+Making user data dir
+Making user log dir
+Making user tracklogs dir
+Making user tmp dir
+Making user gps dir
+Making map_cache dir
+
+
+Built-in map types:
+      gnis   USGS GNIS Datapoints
+       pop   USGS GNIS Datapoints w/population
+       map   APRSdos Maps
+       map   WinAPRS/MacAPRS/X-APRS Maps
+
+Support for these additional map types has been compiled in: 
+       geo   Image Map (ImageMagick/GraphicsMagick library, many formats allowed)
+       geo   URL (Internet maps via libcurl library)
+       geo   URL (OpenStreetMaps via libcurl library
+                  Copyright OpenStreetMap and contributors, CC-BY-SA)
+       shp   ESRI Shapefile Maps (Shapelib library)
+       tif   USGS DRG Geotiff Topographic Maps (libgeotiff/libproj)
+Making user /root/.xastir/config/xastir.cnf file
+festival_client: connect to server failed
+SayText: Couldn't open socket to Festival
+Indexing maps...
+Finished indexing maps
+*** Reading WX Alert log files
+*** Done with WX Alert log files
+convert_from_xastir_coordinates:X out-of-range (too low):18446744073677686016
+convert_from_xastir_coordinates:Y out-of-range (too low):18446744073673138816
+convert_from_xastir_coordinates:X out-of-range (too high):161465600
+convert_from_xastir_coordinates:Y out-of-range (too high):101212800

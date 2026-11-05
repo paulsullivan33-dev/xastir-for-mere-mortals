@@ -1,0 +1,58 @@
+Lab notes — Xastir for Mere Mortals
+====================================
+
+Build machine
+    Ubuntu 24.04, no radio, no TNC, no GPS receiver.
+    Xastir ran under Xvfb (a virtual X display) because
+    the sandbox is headless; screenshots in
+    xastir-lab/transcripts/ are from that display.
+
+Software as installed (Ubuntu archive)
+    xastir 2.2.0-1build4 (universe)
+    Installed helpers from the same package, verified
+    present in /usr/bin: callpass, xastir_udp_client,
+    testdbfawk.
+    Libraries this build links, from ldd: Motif (libXm),
+    GraphicsMagick, libcurl, shapelib, libgeotiff,
+    libproj, libax25.
+
+The specimen log
+    examples/specimen-log.txt — nine lines, written by
+    hand in the raw TNC text format, all stations the
+    N0CALL placeholder family, all positions near
+    40.00 N 75.00 W. Contents: digipeater position with
+    PHG, home position, two mobile positions (a track),
+    one weather report, one object (PICNIC), one
+    message and its ack, one status text.
+
+The playback method
+    1. Started Xastir; the Configure Station dialogue
+       appeared (callsign NOCALL, position 0,0) and was
+       accepted with OK.
+    2. Copied the specimen to ~/.xastir/logs/ — the
+       directory the Open Log File selector opens by
+       default.
+    3. File -> Open Log File -> specimen-log.txt.
+    4. Verified: status segment "File done..", station
+       counter 1/1 -> 6/6, the world map labelled the
+       station cluster including the weather readout
+       line, and View -> All Stations listed all six
+       entries with symbols, paths, PHG and comments
+       matching the raw packets.
+
+What the lab did NOT do
+    No interface was started (no TNC, radio, or GPS
+    existed). No connection to APRS-IS was made — the
+    lab logs in as nobody, and Xastir's Internet Server
+    properties expect a callsign and passcode, so the
+    internet workflows are documented-only. Nothing
+    was transmitted; there was nothing to transmit with
+    and no licence question was ever posed to the
+    machine. Online map tiles were not fetched; the
+    built-in worldhi.map is the map in every screenshot.
+
+Environment note
+    Xastir resolves its home directory from the account
+    record, not from $HOME: run with a different $HOME
+    it still builds and uses the account's real
+    ~/.xastir. Verified accidentally, then deliberately.

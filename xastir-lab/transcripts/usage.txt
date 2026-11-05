@@ -1,0 +1,27 @@
+xastir: invalid option -- 'h'
+
+Xastir Command line Options
+
+-c /path/dir       Xastir config dir
+-f callsign        Track callsign
+-i                 Install private Colormap
+-geometry WxH+X+Y  Set Window Geometry
+-l Dutch           Set the language to Dutch
+-l English         Set the language to English
+-l French          Set the language to French
+-l German          Set the language to German
+-l Italian         Set the language to Italian
+-l Portuguese      Set the language to Portuguese
+-l Spanish         Set the language to Spanish
+-l ElmerFudd       Set the language to ElmerFudd
+-l MuppetsChef     Set the language to MuppetsChef
+-l OldeEnglish     Set the language to OldeEnglish
+-l PigLatin        Set the language to PigLatin
+-l PirateEnglish   Set the language to PirateEnglish
+-m                 Deselect Maps
+-p                 Disable popups
+-t                 Internal SIGSEGV handler enabled
+-v level           Set the debug level
+-V                 Print version number and exit
+
+
